@@ -1,0 +1,9 @@
+.nig {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 800px;
+  margin: 100px auto;
+  justify-content: center;
+  align-items: center;
+}
