@@ -1,35 +1,27 @@
-import { useState } from "react";
-import "./artwork.css";
+import React, { useState } from "react";
 
-let nextId = 0;
+const SculptorsList = () => {
+  const [sculptors, setSculptors] = useState([
+    { id: 1, name: "Michelangelo" },
+    { id: 2, name: "Donatello" },
+    { id: 3, name: "Kalcho" },
+  ]);
 
-export default function Artwork() {
-  // const [person, setPerson] = useState({
-  //   name: "Stefan Demiro",
-  //   artwork: {
-  //     title: "Blue Nana",
-  //     city: "Hamburg",
-  //     image: "https://i.imgur.com/Sd1AgUOm.jpg",
-  //   },
-  // });
-
-  const [name, setName] = useState('');
-  const [scupltors, setSculptors] = useState([]);
-
-  function handleButtonClick() {
-    setSculptors([...scupltors, {id: nextId++, name}]);
-
-  }
+  const handleDelete = (id) => {
+    setSculptors(sculptors.filter((sculptor) => sculptor.id !== id));
+  };
 
   return (
     <>
-    <h1>Inspiring Scultors</h1>
-    <input type="text" onChange={e => setName(e.target.value)} value={name}/>
-    <button onClick={handleButtonClick}>Add</button>
-
-    <ul>
-      {scupltors.map(sculptor => <li key={sculptor.id}>{sculptor.name}</li>)}
-    </ul>
+      <h1>Inspiring Sculptors</h1>
+      <ul>
+        {sculptors.map((sculptor) => (
+          <li key={sculptor.id}>
+            {sculptor.name}
+            <button onClick={() => handleDelete(sculptor.id)}>Delete</button>
+          </li>
+        ))}
+      </ul>
     </>
   );
-}
+};
