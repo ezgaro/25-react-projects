@@ -5,7 +5,6 @@ import Accordion from './components/accordion';
 function App() {
   return (
     <div className="App">
-    {/* Accordion component */}
     <Accordion />
     {/* <Artwork /> */}
 
