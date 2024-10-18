@@ -17,14 +17,10 @@ export default function RandomColor() {
     setColor(hexColor);
   }
 
-  function randomColorUtility(num) {
-    return Math.floor(Math.random() * num);
-  }
-
   function handleCreateRandomRgbColor() {
-    const r = randomColorUtility(256);
-    const g = randomColorUtility(256);
-    const b = randomColorUtility(256);
+    const r = handleCreateUtility(256);
+    const g = handleCreateUtility(256);
+    const b = handleCreateUtility(256);
 
     setColor(`rgb(${r}, ${g}, ${b})`);
   }
