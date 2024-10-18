@@ -10,11 +10,23 @@ export default function ShapeEditor() {
   const [shapes, setShapes] = useState(initialState);
 
   function handleClick() {
-    let circleShapes = shapes
-      .filter((s) => s.type === "circle")
-      .map((s) => ({ ...s, y: s.y + 50 }));
-    let removePrevCircle = shapes.filter((s) => s.type !== "circle");
-    setShapes([...removePrevCircle, ...circleShapes]);
+    // let circleShapes = shapes
+    //   .filter((s) => s.type === "circle")
+    //   .map((s) => ({ ...s, y: s.y + 50 }));
+    // let removePrevCircle = shapes.filter((s) => s.type !== "circle");
+    // setShapes([...removePrevCircle, ...circleShapes]);
+
+    let newShapes = shapes.map((shape) => {
+      if (shape.type === "square") {
+        return shape;
+      } else {
+        return {
+          ...shape,
+          y: shape.y + 50,
+        };
+      }
+    });
+    setShapes(newShapes);
   }
 
   return (
