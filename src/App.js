@@ -1,7 +1,9 @@
 import "./App.css";
 import Accordion from "./components/accordion";
+import ImageSlider from "./components/image-slider";
 import RandomColor from "./components/random-color";
 import StarRating from "./components/starRating";
+// import StarRatingVol2 from "./components/starRatingVol2";
 // import BucketList from "./components/artBucketList";
 // import Artwork from "./components/artwork";
 // import ShapeEditor from "./components/transformingAnArray";
@@ -11,7 +13,13 @@ function App() {
     <div className="App">
       <Accordion />
       <RandomColor />
-      <StarRating numOfStars={10}/>
+      <StarRating numOfStars={10} />
+      <ImageSlider
+        url={"https://picsum.photos/v2/list"}
+        limit={"10"}
+        page={"1"}
+      />
+      {/* <StarRatingVol2 numOfStars={10} /> */}
       {/* <Artwork /> */}
       {/* <ShapeEditor /> */}
       {/* <BucketList /> */}
