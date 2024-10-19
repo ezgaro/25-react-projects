@@ -1,6 +1,7 @@
 import "./App.css";
 import Accordion from "./components/accordion";
 import ImageSlider from "./components/image-slider";
+import LoadMoreData from "./components/load-more-data";
 import RandomColor from "./components/random-color";
 import StarRating from "./components/starRating";
 // import StarRatingVol2 from "./components/starRatingVol2";
@@ -19,6 +20,7 @@ function App() {
         limit={"10"}
         page={"1"}
       />
+      <LoadMoreData />
       {/* <StarRatingVol2 numOfStars={10} /> */}
       {/* <Artwork /> */}
       {/* <ShapeEditor /> */}
