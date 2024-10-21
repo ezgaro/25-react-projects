@@ -3,6 +3,8 @@ import ImageSlider from "./components/image-slider";
 import LoadMoreData from "./components/load-more-data";
 import RandomColor from "./components/random-color";
 import StarRating from "./components/starRating";
+import TreeView from "./components/tree-view";
+import menus from "./components/tree-view/data";
 // import StarRatingVol2 from "./components/starRatingVol2";
 // import BucketList from "./components/artBucketList";
 // import Artwork from "./components/artwork";
@@ -20,6 +22,7 @@ function App() {
         page={"1"}
       />
       <LoadMoreData />
+      <TreeView menus={menus} />
       {/* <StarRatingVol2 numOfStars={10} /> */}
       {/* <Artwork /> */}
       {/* <ShapeEditor /> */}
