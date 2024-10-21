@@ -1,5 +1,6 @@
 import Accordion from "./components/accordion";
 import ImageSlider from "./components/image-slider";
+import LightDarkMode from "./components/light-dark-mode";
 import LoadMoreData from "./components/load-more-data";
 import QRCodeGenerator from "./components/qr-code-generator";
 import RandomColor from "./components/random-color";
@@ -25,6 +26,7 @@ function App() {
       <LoadMoreData />
       <TreeView menus={menus} />
       <QRCodeGenerator />
+      <LightDarkMode />
       {/* <StarRatingVol2 numOfStars={10} /> */}
       {/* <Artwork /> */}
       {/* <ShapeEditor /> */}
