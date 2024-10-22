@@ -15,7 +15,6 @@ export default function ScrollIndicator({ url }) {
 
       if (data && data.products && data.products.length > 0) {
         setData(data.products);
-        setLoading(false);
       }
     } catch (error) {
       setErrorMessage(error.message);
