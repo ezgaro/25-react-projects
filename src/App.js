@@ -1,4 +1,5 @@
 import Accordion from "./components/accordion";
+import ScrollIndicator from "./components/customScrollIndicator";
 import ImageSlider from "./components/image-slider";
 import LightDarkMode from "./components/light-dark-mode";
 import LoadMoreData from "./components/load-more-data";
@@ -27,6 +28,7 @@ function App() {
       <TreeView menus={menus} />
       <QRCodeGenerator />
       <LightDarkMode />
+      <ScrollIndicator url={"https://dummyjson.com/products?limit=100"} />
       {/* <StarRatingVol2 numOfStars={10} /> */}
       {/* <Artwork /> */}
       {/* <ShapeEditor /> */}
