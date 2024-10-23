@@ -8,6 +8,7 @@ import LightDarkMode from "./components/light-dark-mode";
 import LoadMoreData from "./components/load-more-data";
 import QRCodeGenerator from "./components/qr-code-generator";
 import RandomColor from "./components/random-color";
+import SearchAutocomplete from "./components/search-autocomplete-with-api";
 import StarRating from "./components/starRating";
 import TreeView from "./components/tree-view";
 import menus from "./components/tree-view/data";
@@ -35,6 +36,7 @@ function App() {
       <TabTest />
       <ModalTest />
       <GithubProfileFinder />
+      <SearchAutocomplete />
       {/* <StarRatingVol2 numOfStars={10} /> */}
       {/* <Artwork /> */}
       {/* <ShapeEditor /> */}
