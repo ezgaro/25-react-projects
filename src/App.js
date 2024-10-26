@@ -17,6 +17,7 @@ import TreeView from "./components/tree-view";
 import menus from "./components/tree-view/data";
 import UseFetchHookTest from "./components/use-fetch/test";
 import UseOnclickOutsideTest from "./components/use-outside-click/test";
+import UseWindowResizeTest from "./components/use-window-resize/test";
 // import StarRatingVol2 from "./components/starRatingVol2";
 // import BucketList from "./components/artBucketList";
 // import Artwork from "./components/artwork";
@@ -48,6 +49,7 @@ function App() {
       </FeatureFlagGlobalState>
       <UseFetchHookTest />
       <UseOnclickOutsideTest />
+      <UseWindowResizeTest />
       {/* <StarRatingVol2 numOfStars={10} /> */}
       {/* <Artwork /> */}
       {/* <ShapeEditor /> */}
