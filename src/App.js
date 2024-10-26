@@ -16,6 +16,7 @@ import TicTacToe from "./components/tic-tac-toe";
 import TreeView from "./components/tree-view";
 import menus from "./components/tree-view/data";
 import UseFetchHookTest from "./components/use-fetch/test";
+import UseOnclickOutsideTest from "./components/use-outside-click/test";
 // import StarRatingVol2 from "./components/starRatingVol2";
 // import BucketList from "./components/artBucketList";
 // import Artwork from "./components/artwork";
@@ -46,6 +47,7 @@ function App() {
         <FeatureFlags />
       </FeatureFlagGlobalState>
       <UseFetchHookTest />
+      <UseOnclickOutsideTest />
       {/* <StarRatingVol2 numOfStars={10} /> */}
       {/* <Artwork /> */}
       {/* <ShapeEditor /> */}
