@@ -1,3 +1,5 @@
+import "./App.css";
+
 import Accordion from "./components/accordion";
 import ModalTest from "./components/custom-modal-popup/modal-test";
 import TabTest from "./components/custom-tabs/tabs-test";
@@ -20,6 +22,7 @@ import menus from "./components/tree-view/data";
 import UseFetchHookTest from "./components/use-fetch/test";
 import UseOnclickOutsideTest from "./components/use-outside-click/test";
 import UseWindowResizeTest from "./components/use-window-resize/test";
+import WeatherApplication from "./components/weather-application/WeatherApplication";
 // import StarRatingVol2 from "./components/starRatingVol2";
 // import BucketList from "./components/artBucketList";
 // import Artwork from "./components/artwork";
@@ -54,6 +57,7 @@ function App() {
       <UseWindowResizeTest />
       <ScrollToTopAndBottom />
       <ScrollToSection />
+      <WeatherApplication />
       {/* <StarRatingVol2 numOfStars={10} /> */}
       {/* <Artwork /> */}
       {/* <ShapeEditor /> */}
