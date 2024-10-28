@@ -6,6 +6,7 @@ import TabTest from "./components/custom-tabs/tabs-test";
 import ScrollIndicator from "./components/customScrollIndicator";
 import FeatureFlags from "./components/feature-flag";
 import FeatureFlagGlobalState from "./components/feature-flag/context";
+import FoodRecipeAppMain from "./components/food-recipe-app/FoodRecipeAppMain";
 import GithubProfileFinder from "./components/github-profile-finder";
 import ImageSlider from "./components/image-slider";
 import LightDarkMode from "./components/light-dark-mode";
@@ -58,6 +59,7 @@ function App() {
       <ScrollToTopAndBottom />
       <ScrollToSection />
       <WeatherApplication />
+      <FoodRecipeAppMain />
       {/* <StarRatingVol2 numOfStars={10} /> */}
       {/* <Artwork /> */}
       {/* <ShapeEditor /> */}
